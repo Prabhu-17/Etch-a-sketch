@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="title">Sketch Board</div>
+        <div class="mode">Left click to stop coloring!</div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button onclick="changeColor('Black')">Black</button>
+                <button onclick="changeColor('White')">Eraser</button>
+                <button onclick="changeColor('Grey')">Gray</button>
+                <button onclick="changeColor('random')">Random</button>
+                <button onclick="resetBoard()">Reset</button>
+            </div>
+            <div>
+                <input type="number" placeholder="size of Board" value="16" onchange="changeSize(this.value)">
+                <button>Set Size</button>
+            </div>
+            <div class="error">
+                Input must be between 2 and 100
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
